@@ -1,0 +1,15 @@
+<h2>Contacts</h2>
+<div class="contact-form" {{ action "submitForm" name message on="submit"}}>
+  <div>
+    <label>Name:<br>
+      {{input value=name}}
+    </label>
+  </div>
+  <div>
+    <label>
+      Message:<br>
+      {{textarea value=message}}
+    </label>
+  </div>
+  <button {{action "submitForm" name message}}>Submit</button>
+</div>
